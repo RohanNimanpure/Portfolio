@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Nimanpure - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <span class="brand-text">Rohan Nimanpure</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links-desktop">
+                    <button class="nav-link active" data-section="home">Home</button>
+                    <button class="nav-link" data-section="about">About</button>
+                    <button class="nav-link" data-section="skills">Skills</button>
+                    <button class="nav-link" data-section="projects">Projects</button>
+                    <button class="nav-link" data-section="contact">Contact</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="nav-links-mobile hidden" id="mobileMenu">
+            <button class="nav-link-mobile active" data-section="home">Home</button>
+            <button class="nav-link-mobile" data-section="about">About</button>
+            <button class="nav-link-mobile" data-section="skills">Skills</button>
+            <button class="nav-link-mobile" data-section="projects">Projects</button>
+            <button class="nav-link-mobile" data-section="contact">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="home-container">
+                <div class="home-content">
+                    <h1 class="home-title">
+                        Hi, I'm <span class="gradient-text">ROHAN NIMANPURE</span> 👋
+                    </h1>
+                    <p class="home-subtitle">
+                        MCA Student | Web & Android Developer<br><br>
+                        Passionate about building modern applications, learning new technologies, and solving real-world problems through software development. Always excited to take on new challenges and create innovative projects.
+                    </p>
+                    <div class="home-actions">
+                  <a href="https://drive.google.com/file/d/1AxA6c9Z7amBuWNlXudM77nme12jEQpAM/view?usp=sharing"
+                      class="btn-primary" target="_blank" rel="noopener noreferrer">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                      View Resume
+                  </a>
+
+
+                   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <h2 class="section-title gradient-text">About Me</h2>
+                
+                <div class="about-content">
+                    <div class="card about-intro">
+                        <p class="about-text">
+                            I'm an MCA student at School of Computer Science & IT, DAVV with a strong interest in Web and Android Development. I enjoy learning new technologies, taking on challenges, and building real-world software solutions.<br><br>
+
+                            Recently, I developed an Android-based application as my final semester project, which helped me strengthen my skills in application development, Firebase integration, and UI design.<br><br>
+
+                            I am passionate about continuously improving my technical skills and aim to build innovative and impactful software projects in the future.<br><br>
+                        </p>
+                    </div>
+
+                    <div class="card education-card">
+                        <div class="card-header">
+                            <div class="icon-container">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Education</h3>
+                        </div>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <p class="education-degree">Master of Computer Application (MCA)</p>
+                                <p class="education-school">School of Computer Science & IT, DAVV, Indore</p>
+                                <p class="education-year">2024 – 2026</p>
+                                <p class="education-details">Specialization: Computer Applications</p>
+                            </div>
+                            <div class="education-item">
+                                <p class="education-degree">Bachelor of Computer Application (BCA)</p>
+                                <p class="education-school">School of Computer Science & IT, DAVV, Indore</p>
+                                <p class="education-year">2021 – 2024</p>
+                                <p class="education-details">Focused on Programming, Web Development & Software Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container-wide">
+                <h2 class="section-title gradient-text">Skills</h2>
+
+                <div class="skills-grid">
+
+                    <!-- Programming Languages -->
+                    <div class="card skills-card">
+                        <div class="card-header">
+
+                            <div class="icon-container-purple">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+
+                            <h3 class="card-title-large">
+                                Programming Languages
+                            </h3>
+
+                        </div>
+
+                        <div class="skills-badges">
+                            <span class="badge">Java</span>
+                            <span class="badge">C/C++</span>
+                        </div>
+                    </div>
+                    <!-- Frontend Development -->
+                    <div class="card skills-card">
+                        <div class="card-header">
+                
+                            <div class="icon-container">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                
+                            <h3 class="card-title-large">
+                                Frontend Development
+                            </h3>
+                
+                        </div>
+                
+                        <div class="skills-badges">
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Servlet</span>
+                            <span class="badge">JSP</span>
+                            <span class="badge">Responsive Design</span>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Android Development -->
+                    <div class="card skills-card">
+                        <div class="card-header">
+                
+                            <div class="icon-container-purple">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                            </div>
+                
+                            <h3 class="card-title-large">
+                                Android Development
+                            </h3>
+                
+                        </div>
+                
+                        <div class="skills-badges">
+                            <span class="badge">Android Studio</span>
+                            <span class="badge">Firebase</span>
+                            <span class="badge">XML</span>
+                            <span class="badge">Google Maps API</span>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Database & Backend -->
+                    <div class="card skills-card">
+                        <div class="card-header">
+                
+                            <div class="icon-container">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"></path>
+                                    <path d="M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"></path>
+                                </svg>
+                            </div>
+                
+                            <h3 class="card-title-large">
+                                Database & Backend
+                            </h3>
+                
+                        </div>
+                
+                        <div class="skills-badges">
+                            <span class="badge">SQL</span>
+                            <span class="badge">JDBC</span>
+                            <span class="badge">Firebase</span>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Tools & Technologies -->
+                    <div class="card skills-card">
+                        <div class="card-header">
+                
+                            <div class="icon-container-purple">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0-1.4 0L2 17.6V22h4.4L17.7 10.7a1 1 0 0 0 0-1.4z"></path>
+                                    <path d="M16 4l4 4"></path>
+                                </svg>
+                            </div>
+                
+                            <h3 class="card-title-large">
+                                Tools & Technologies
+                            </h3>
+                
+                        </div>
+                
+                        <div class="skills-badges">
+                            <span class="badge">Git</span>
+                            <span class="badge">GitHub</span>
+                            <span class="badge">VS Code</span>
+                            <span class="badge">Eclipse IDE</span>
+                            <span class="badge">android Studio</span>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Soft Skills -->
+                    <div class="card skills-card">
+                        <div class="card-header">
+                
+                            <div class="icon-container">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                
+                            <h3 class="card-title-large">
+                                Soft Skills
+                            </h3>
+                
+                        </div>
+                
+                        <div class="soft-skills-list">
+                
+                            <div class="soft-skill-item">
+                                <span>Communication</span>
+                            </div>
+                
+                            <div class="soft-skill-item">
+                                <span>Teamwork</span>
+                            </div>
+                
+                            <div class="soft-skill-item">
+                                <span>Problem Solving</span>
+                            </div>
+                
+                            <div class="soft-skill-item">
+                                <span>Leadership</span>
+                            </div>
+                
+                            <div class="soft-skill-item">
+                                <span>Quick Learning</span>
+                            </div>
+                
+                            <div class="soft-skill-item">
+                                <span>Time Management</span>
+                            </div>
+                
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+               <div class="section-container-wide">
+                <h2 class="section-title gradient-text">Projects</h2>
+
+                <div class="projects-container">
+
+                    <!-- Project 1 -->
+                    <div class="card project-card">
+
+                        <div class="project-header">
+
+                            <h3 class="project-title">
+                                SheShield – Women Safety Application
+                            </h3>
+
+                            <!-- Project Links -->
+                            <div class="project-links">
+
+                                <!-- GitHub Link -->
+                                <a href="https://github.com/RohanNimanpure/SheShield" target="_blank">
+
+                                    <svg class="external-link" width="28" height="28"
+                                        viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2"
+                                        style="cursor: pointer;">
+
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+
+                                    </svg>
+
+                                </a>
+
+
+                                <!-- APK Download -->
+                                <a href="https://drive.google.com/file/d/1DKF1JWjMunLGR5SVTlzMBBa0bfmBY-ym/view?usp=sharing" target="_blank">
+
+                                    <svg class="download-link" width="28" height="28"
+                                        viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2"
+                                        style="cursor: pointer;">
+
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <p class="project-description">
+                            A smart Android-based women safety application designed to provide emergency support through SOS alerts, live location sharing, and secure authentication.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Android Studio</span>
+                            <span class="tag">XML</span>
+                            <span class="tag">Google Maps API</span>
+                        </div>
+
+                    </div>
+                
+                    <!-- Project 2 -->
+                    <div class="card project-card">
+                
+                        <div class="project-header">
+                
+                            <h3 class="project-title">
+                                Personal Portfolio Website
+                            </h3>
+                
+                            <a href="https://kannukothe.github.io/Personal-Portfolio/" target="_blank">
+                
+                                <svg class="external-link" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" style="cursor: pointer;">
+                
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                
+                                </svg>
+                
+                            </a>
+                
+                        </div>
+                
+                        <p class="project-description">
+                            A responsive personal portfolio website showcasing my technical skills, projects, education, and development journey with modern UI design.
+                        </p>
+                
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title gradient-text">Get In Touch</h2>
+
+                <p class="contact-subtitle">
+                    Feel free to connect with me for collaborations, projects, or professional opportunities.
+                </p>
+
+                <div class="contact-content">
+                    <!-- Email -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rohannimanpure1518@gmail.com" target="_blank" class="contact-card-link">
+                      <div class="card contact-card">
+                          <div class="contact-info">
+                              <div class="icon-container">
+                                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                      <polyline points="22,6 12,13 2,6"></polyline>
+                                  </svg>
+                              </div>
+                              <div class="contact-details">
+                                  <h3 class="contact-label">Email</h3>
+                                  <p class="contact-value">rohannimanpure1518@gmail.com</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  
+                  
+
+                    <!-- Address -->
+                    <div class="card contact-card">
+                        <div class="contact-info">
+                            <div class="icon-container">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-label">Address</h3>
+                                <p class="contact-value">Indore, Madhya Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="card social-card">
+                        <h3 class="social-title">Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/rohan-nimanpure-202242265" target="_blank" rel="noopener noreferrer" class="btn-social">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/RohanNimanpure" target="_blank" rel="noopener noreferrer" class="btn-social">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">© 2025 Rohan Nimanpure | Software Engineer Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
